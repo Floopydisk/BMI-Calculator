@@ -8,9 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 <color name="gray_600">#6e6e6e</color>
-<color name="black_900_7f">#7f000000</color>
-<color name="black_900_b2">#b2000000</color>
-<color name="black_900_8c">#8c000000</color>
 <color name="purple_A200_71">#71c62ff8</color>
 <color name="indigo_A200">#6c63ff</color>
 <color name="purple_A200_63">#63c62ff8</color>
@@ -20,7 +17,6 @@
 <color name="bluegray_700">#535461</color>
 <color name="black_900_cc">#cc000000</color>
 <color name="black_900">#000000</color>
-<color name="purple_A201">#cb47f7</color>
 <color name="purple_A200">#c62ff8</color>
 <color name="gray_200_16">#16eeeeee</color>
 <color name="white_A700">#ffffff</color>

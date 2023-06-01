@@ -64,6 +64,30 @@ public fun String?.isValidEmail(isMandatory: Boolean = false): Boolean {
   return result
 }
 
+public fun String?.isText(isMandatory: Boolean = false): Boolean {
+  if (isNullOrEmpty()) {
+    if (isMandatory) {
+      Toast.makeText(
+              MyApp.getInstance(),
+              R.string.msg_please_enter_valid_text,
+              Toast.LENGTH_SHORT
+          ).show()
+    }
+    return !isMandatory
+  }
+  val textRegex = "[a-zA-Z ]+".toRegex()
+  val result = 
+  textRegex.matches(this)
+  if (!result) {
+    Toast.makeText(
+            MyApp.getInstance(),
+            R.string.msg_please_enter_valid_text,
+            Toast.LENGTH_SHORT
+        ).show()
+  }
+  return result
+}
+
 public fun String?.isUsername(isMandatory: Boolean = false): Boolean {
   if (isNullOrEmpty()) {
     if (isMandatory) {

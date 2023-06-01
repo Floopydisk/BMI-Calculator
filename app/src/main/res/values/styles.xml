@@ -11,20 +11,8 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">600</item>
     </style>
-    <style name="txtPoppinsregular45">
-        <item name="android:textSize">@dimen/_45pxh</item>
-        <item name="android:textColor">@color/black_900_b2</item>
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textFontWeight" tools:targetApi="p">400</item>
-    </style>
     <style name="txtPoppinsbold35">
         <item name="android:textSize">@dimen/_35pxh</item>
-        <item name="android:textColor">@color/black_900</item>
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textFontWeight" tools:targetApi="p">700</item>
-    </style>
-    <style name="txtPoppinsbold16">
-        <item name="android:textSize">@dimen/_16pxh</item>
         <item name="android:textColor">@color/black_900</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
@@ -45,20 +33,8 @@
     <style name="groupStylecornerRadius">
         <item name="android:background">@drawable/rectangle_radius_38</item>
     </style>
-    <style name="txtPoppinssemibold20_2">
-        <item name="android:textSize">@dimen/_20pxh</item>
-        <item name="android:textColor">@color/purple_A201</item>
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textFontWeight" tools:targetApi="p">600</item>
-    </style>
     <style name="groupStylepurple_A200_bfcornerRadius">
         <item name="android:background">@drawable/rectangle_bg_purple_a200_bf_radius_20_105</item>
-    </style>
-    <style name="txtPoppinssemibold20_1">
-        <item name="android:textSize">@dimen/_20pxh</item>
-        <item name="android:textColor">@color/black_900_8c</item>
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textFontWeight" tools:targetApi="p">600</item>
     </style>
     <style name="groupStylegray_200cornerRadius">
         <item name="android:background">@drawable/rectangle_bg_gray_200_radius_58</item>
