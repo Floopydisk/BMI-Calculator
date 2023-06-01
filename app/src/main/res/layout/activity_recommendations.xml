@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="recommendationsVM" type="com.semilooresapplication.app.modules.recommendations.data.viewmodel.RecommendationsVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrecommendationsOne"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumnrecommendationsOne"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_200">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtRECOMMENDATIONSOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_47pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{recommendationsVM.recommendationsModel.txtRECOMMENDATIONSOne}"
+                style="@style/txtPoppinsbold25" tools:text="@string/lbl_recommendations"/>
+            <LinearLayout android:id="@+id/linearRowrunning"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRunning"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_39pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{recommendationsVM.recommendationsModel.txtRunning}"
+                    style="@style/txtPoppinsmedium25" tools:text="@string/lbl_running"/>
+                <ImageView android:id="@+id/imageRunningOne"
+                    android:layout_height="@dimen/_45pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_88pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="@dimen/_45pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_running1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_running1"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowwalking"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWalking"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_weight="0.71"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{recommendationsVM.recommendationsModel.txtWalking}"
+                    style="@style/txtPoppinsmedium25" tools:text="@string/lbl_walking"/>
+                <ImageView android:id="@+id/imageWalkingOne"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_89pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_walking1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_walking1"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowyoga"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYoga"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginStart="@dimen/_45pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{recommendationsVM.recommendationsModel.txtYoga}"
+                    style="@style/txtPoppinsmedium25" tools:text="@string/lbl_yoga"/>
+                <ImageView android:id="@+id/imageYogaOne"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginStart="@dimen/_129pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="@dimen/_43pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_yoga1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_yoga1"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSaveResults"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_104pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_209pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_save_results"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_save_results"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_148pxh"
+            android:layout_marginStart="@dimen/_148pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_64pxh"
+            app:srcCompat="@drawable/img_upload" app:tint="@color/purple_A200"/>
+    </FrameLayout>
+</layout>

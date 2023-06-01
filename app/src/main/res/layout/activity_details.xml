@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailsVM" type="com.semilooresapplication.app.modules.details.data.viewmodel.DetailsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDetails"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_200">
+        <TextView android:ellipsize="end" android:id="@+id/txtSUMMARY"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_47pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{detailsVM.detailsModel.txtSUMMARY}"
+            style="@style/txtPoppinsbold25" tools:text="@string/lbl_summary"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSaveResults"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_33pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_546pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/lbl_save_results"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_save_results"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_gray_200_16_radius_32"
+            android:id="@+id/btnGroupSeventy"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_64pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="@dimen/_64pxh"
+            android:paddingHorizontal="@dimen/_10pxh"
+            android:paddingVertical="@dimen/_10pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_group70" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

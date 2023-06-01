@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bmiResultsVM" type="com.semilooresapplication.app.modules.bmiresults.data.viewmodel.BmiResultsVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameBMIResults"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_200">
+        <LinearLayout android:id="@+id/linearColumnbmiresults"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_27pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtBMIRESULTS"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{bmiResultsVM.bmiResultsModel.txtBMIRESULTS}"
+                style="@style/txtPoppinsbold25" tools:text="@string/lbl_bmi_results"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearMainEclipse"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_42pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_200_16cornerRadius">
+                <FrameLayout android:id="@+id/frameStackellipseten"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_193pxv"
+                    android:layout_marginHorizontal="@dimen/_31pxh"
+                    android:layout_marginVertical="@dimen/_31pxv"
+                    android:layout_width="@dimen/_193pxh" style="@style/groupStylecornerRadius_8">
+                    <View
+                        android:background="@drawable/rectangle_border_purple_a200_radius_96_555"
+                        android:id="@+id/viewEllipseTen"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_193pxh" android:layout_width="@dimen/_193pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtThreeHundredThirtyThree"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_40pxv"
+                        android:layout_marginEnd="@dimen/_32pxh"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_marginTop="@dimen/_40pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{bmiResultsVM.bmiResultsModel.txtThreeHundredThirtyThree}"
+                        style="@style/txtPoppinssemibold62" tools:text="@string/lbl_33_3"/>
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtYouhaveObese"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_92pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{bmiResultsVM.bmiResultsModel.txtYouhaveObese}"
+                style="@style/txtPoppinssemibold20" tools:text="@string/msg_you_have_obese"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnDetails"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_75pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_details"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_details"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowhome"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginStart="@dimen/_64pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_200_16_radius_32"
+                    android:id="@+id/btnHome"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_width="@dimen/_64pxh"
+                    android:paddingHorizontal="@dimen/_10pxh"
+                    android:paddingVertical="@dimen/_10pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_home" tools:ignore="ContentDescription"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_200_16_radius_32"
+                    android:id="@+id/btnGroupSeventy"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_width="@dimen/_64pxh"
+                    android:paddingHorizontal="@dimen/_10pxh"
+                    android:paddingVertical="@dimen/_10pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_group70" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
