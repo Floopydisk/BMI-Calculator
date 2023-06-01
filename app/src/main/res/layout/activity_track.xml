@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="trackVM" type="com.semilooresapplication.app.modules.track.data.viewmodel.TrackVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameTrack"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_200">
+        <View
+            android:background="@drawable/rectangle_bg_white_a700_radius_tl_20_tr_20"
+            android:id="@+id/viewRectangleThree"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_74pxv"
+            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_360pxh"/>
+        <LinearLayout android:id="@+id/linearRowhome"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageHome"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="@dimen/_45pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_home"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+            <ImageButton
+                android:background="@drawable/rectangle_bg_gray_200_16_radius_27_14"
+                android:id="@+id/btnGroupFiftyFive"
+                android:layout_height="@dimen/_54pxh"
+                android:layout_marginStart="@dimen/_80pxh"
+                android:layout_width="@dimen/_54pxh"
+                android:paddingHorizontal="@dimen/_6pxh"
+                android:paddingVertical="@dimen/_6pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_icons8track96" tools:ignore="ContentDescription"/>
+            <ImageView android:id="@+id/imageIcons8moreNinetySix"
+                android:layout_height="@dimen/_45pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_84pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_45pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_icons8more96"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_icons8more96"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
